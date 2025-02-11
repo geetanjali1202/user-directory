@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Details Finder</h1>
+        <input type="text" id="userId" placeholder="Enter User ID">
+        <button onclick="fetchUserDetails()">Get Details</button>
+
+        <div id="userDetails" class="hidden">
+            <img id="profilePic" src="" alt="Profile Picture">
+            <h2 id="name"></h2>
+            <p id="designation"></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+        </div>
+        
+        <p id="error" class="error hidden">User not found</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
